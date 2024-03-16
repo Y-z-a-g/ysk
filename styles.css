@@ -64,6 +64,7 @@ h1 {
 
 .btn-main,
 .btn-secondary {
+    font-family: 'Slackside One', cursive;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
