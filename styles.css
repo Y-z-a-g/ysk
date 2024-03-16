@@ -4,8 +4,8 @@
     font-family: "Slackside One", cursive;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 /* Reset some default styles */
 body, h1, a {
     margin: 0;
@@ -42,21 +42,32 @@ nav {
     color: #333;
 }
 
+/* Modify hero for text width control */
 .hero {
-    height: 100vh;
-    background: url('your-image-path.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    padding: 20px; /* Added padding for all sides */
 }
 
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.hero h1,
+.hero p {
+    max-width: 800px; /* Control the max width of the content */
+    margin: 0 auto; /* Center content */
+    padding: 0 20px; /* Add padding for left and right */
+    text-align: left; /* Align text to the left */
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hero h1,
+    .hero p {
+        padding: 0 10px; /* Reduce padding on smaller screens */
+    }
+}
+
+/* Button styles remain unchanged */
 .buttons {
     display: flex;
     gap: 10px;
@@ -80,20 +91,21 @@ h1 {
     color: #333;
 }
 
+/* Content container styles for other text */
 .content-container {
     text-align: center;
     padding: 20px;
-    margin-top: 20px; /* Adjust based on your header height and desired spacing */
+    margin-top: 20px;
 }
 
 .content-container h1 {
     font-weight: bold;
-    margin-bottom: 15px; /* Provides space between the title and the paragraph */
+    margin-bottom: 15px;
 }
 
 .content-container p {
-    font-size: 1rem; /* Adjust as needed for readability */
-    color: #666; /* Slightly lighter than your default text color for contrast */
+    font-size: 1rem;
+    color: #666;
     max-width: 600px; /* Ensures lines are not too long for easy reading */
     margin: 0 auto; /* Centers the text block in the container */
 }
