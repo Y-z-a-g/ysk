@@ -75,19 +75,18 @@ nav {
 
 .btn-main,
 .btn-secondary {
-    font-family: 'Slackside One', cursive;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
 }
 
 .btn-main {
-    background-color: #007bff;
+    background-color: #2e661c;
     color: #fff;
 }
 
 .btn-secondary {
-    background-color: #f8f9fa;
+    background-color: #e7e9eb;
     color: #333;
 }
 
